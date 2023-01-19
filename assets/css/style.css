@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Source+Sans+Pro&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-family: 'Source Sans Pro', sans-serif;
+    --font-josefin: 'Josefin Sans', sans-serif;
+    --clr-primary: rgb(224, 43, 32);
+    --clr-secondary: rgb(43, 44, 42);
+}
+
+
+/* Main */
+
+
+/* Main -> Hero */
+
+main .hero{
+    position: relative;
+    height: 91vh;
+    background-image: url(../image/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+main .hero::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    z-index: -1;
+}
+
+main .hero .hero-content h1{
+    color: white;
+    font-family: var(--font-josefin);
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+main .hero .hero-content p{
+    color: var(--clr-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Main -> About Us */
+
+main .about-us .container h2{
+    color: var(--clr-secondary);
+}
+
+main .about-us .container > h2 span{
+    color: var(--clr-primary);
+}
+
+main .about-us .container .row .col-lg-4 h2{
+    color: var(--clr-primary);
+}
+
+main .about-us .container .row .col-lg-4 p{
+    text-align: justify;
+}
+
+main .about-us .container .row .col-lg-6 p{
+    text-align: justify;
+}
+
+/* Main -> Our Process */
+
+main .our-process {
+    position: relative;
+    height: 500px;
+    background-image: url(../image/our-process-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main -> Gallery */
+
+main .gallery{
+    background-color: rgb(245, 241, 240);
+}
+
+main .gallery .container > h2{
+    color: var(--clr-primary);
+}
+
+/* Main -> Student Review */
+
+main .student-review .container > h2 span{
+    color: var(--clr-primary);
+}
+
+main .student-review .container > p{
+    text-align: justify;
+    padding: 0 10rem;
+}
+
+main .student-review .container .row .col-lg-3 p{
+    text-align: justify;
+}
+
+/* Main -> Google Map */
+
+main .google-map iframe{
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer{
+    min-height: 400px;
+}
+
+/* Footer -> Footer Content */
+
+footer .footer-content{
+    min-height: 350px;
+    background-color: var(--clr-secondary);
+}
+
+footer .footer-content .facebook, footer .footer-content .instagram{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(64, 100, 172);
+    color: white;
+    font-size: 1.5rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+footer .footer-content .instagram{
+    background-color: rgb(194, 42, 95);
+}
+
+footer .footer-copyright{
+    background-color: rgb(23, 23, 23);
+    min-height: 50px;
+}
+
+footer .footer-copyright .container p{
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* Custom Media Query */
+
+
+@media (min-width: 180px) {
+    
+    main .hero .hero-content h1{
+        font-size: 1.8rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 0.8rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1rem;
+    }
+  }
+@media (min-width: 576px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2.5rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.2rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 0rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 992px) {
+    
+    main .hero .hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.2rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 8rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    
+    main .hero .hero-content h1{
+        font-size: 3rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.5rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 10rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    
+    main .hero .hero-content h1{
+        font-size: 3.5rem;
+    }
+
+    main .hero .hero-content p{
+        font-size: 1.5rem;
+    }
+
+    main .student-review .container > p{
+        padding: 0 10rem;
+    }
+
+    footer .footer-copyright .container p{
+        font-size: 1.25rem;
+    }
+  }
